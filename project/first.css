@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ #logo{
+    height: 100px;
+    width: 100px;
+ }
+header{
+    width:100%;
+    height:100vh;
+    display: flex;
+    position: absolute;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    width:100vw;
+    filter: blur(1px);
+    filter: opacity(70%);
+    
+}
+#navbar{
+    width:100%;
+    height:60px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    color: white;
+    position:absolute;
+}
+img{
+    width:100px;
+    position: absolute;
+    left: 10px
+}
+   h4{
+    cursor: pointer;
+    position: relative;
+    left:-70px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+
+
+   }
+   h4:hover{
+    color: red;
+   }
+   #login{
+    position:relative;
+    left:25%;
+   }
+   #a{
+    position: absolute;
+    top: 300px;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+    animation: slide 3s  linear;
+
+   }
+@keyframes slide {
+    from{
+        transform: translate(-450px);
+        filter: opacity(10px);
+    }
+    to{
+        transform: translate(0px);
+        filter: opacity(0px);
+    }
+    
+}
+#search{
+    width:60%;
+    height:30px;
+    position: absolute;
+    bottom: 35%;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.814);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    text-shadow: 5px 5px 5px black;
+    animation: search 3s linear;
+}
+@keyframes search {
+    from{
+        transform: translate(0px,500px);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0px,0px);
+        filter: opacity(1);
+    }
+    
+}
+#searchid{
+    width:90%;
+    height:100%;
+    border: none;
+    background:transparent;
+    outline: none;
+    font-size: 20px;
+}
+#box{
+    cursor: pointer;
+}
+.godown{
+    height: 80px;
+    width:80px;
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    color: white;
+    font-size: 60px;
+    background-color:transparent;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Foldit', cursive;
+    
+}
+.godown:hover{
+    animation: shake 1s infinite;
+    cursor: pointer;
+}
+#latestshoe{
+width: 100%;
+height: 100vh;
+background-color: rgba(60, 52, 52, 0.737);
+position: relative;
+top: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+  }
+  .Srotate{
+    width:320px;
+    height:320px;
+    background-color: rgba(234, 221, 221, 0.481);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: all 0.2s;
+    position: relative;
+    left: 80px;
+    box-shadow: 5px 5px 5px black; 
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+ }
+ .shoe{
+    width:60%;
+    position: relative;
+    left: 20px;
+    filter: drop-shadow(5px 5px 10px black);
+    transition: all 0.3s;
+}
+.Srotate:hover .shoe{
+    transform: rotate(-65deg) translateX(-40px) translateY(-100px) scale(1.2);
+}
+.Srotate:hover{
+    transform:scale(1.2);
+}
+#nameselection{
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 15px;
+    word-spacing: 10px;
+}
+.sname{
+    position: absolute;
+    top: 10px;
+    font-size: 30px;
+    color: rgb(79, 56, 56);
+    display: none;
+}
+.smatter{
+    position: relative;
+    left: -70px;
+    font-size: 20px;
+    display: none;
+    color: rgb(45, 67, 60);
+}
+.smoney{
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    color: rgb(81, 17, 55);
+    display: none;
+}
+.Srotate:hover .sname , .Srotate:hover .smatter , .Srotate:hover .smoney ,.Srotate:hover .buy{
+    display: block;
+}
+.buy{
+    position: absolute;
+    bottom: 29px;
+    width:85px;
+    background-color: rgb(53, 73, 94);
+    color: white;
+    border-radius: 5px 5PX 5PX ;
+    display: none;
+}
+#buttonv{
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    
+}
+#cs{
+    width:100%;
+    height:100vh;
+    background-color: rgba(5, 5, 5, 0.655);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    position: relative;
+    top: 100vh;
+}
+.catcsec{
+    width:220px;
+    height:200px;
+    background-color: rgba(255, 228, 196, 0.648);
+    background-size: 180%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    border-radius: 5px;
+    column-gap: 90px;
+    box-shadow: 5px 5px 5px black;
+}
+.catcsec:hover{
+    transform: scale(1.2);
+}
+
+#catagory{
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 15px;
+    word-spacing: 10px;
+}
+#up{
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    font-size: 40px;
+    transform:rotate(180deg);
+}
+footer{
+    width:100%;
+    height:100px;
+    background-color: rgba(128, 128, 128, 0.929);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    bottom: 0px;
+    top: 100vh;
+
+}
+#copyright{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 20px;
+}
+.fa-brands{
+    font-size: 30px;
+    position: relative;
+    left: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-evenly;
+    
+}
+#first3{
+    margin-left: 10px;
+}
+.c{
+    text-decoration: none;
+    color: white;
+    background-position: 100%;
+    background-size: 100%;
+}
+#Lifestyle{
+    background-image: url(../assects/imges/lifestyle.jpg);
+}
+#Jordan{
+    background-image: url(../assects/imges/jordan.jpg);
+}
+#Running{
+background-image: url(../assects/imges/Running.jpg);
+}
+#Basketball{
+    background-image: url(../assects/imges/Basketball.jpg);
+}
+#Football{
+    background-image: url(../assects/imges/Football.jpg);
+}
+#Traininggym{
+    background-image: url(../assects/imges/Traininggym.jpg);
+}
+#Skateboarding{
+    background-image: url(../assects/imges/Skateboarding.jpg);
+}
+#Golf{
+    background-image: url(../assects/imges/Golf.jpg);
+}
+#Tennis{
+    background-image: url(../assects/imges/Tennis.jpg);
+}
+#Walking{
+    background-image: url(../assects/imges/Walking.jpg);
+}
+.b{
+    text-decoration: none;
+    color: white;
+}

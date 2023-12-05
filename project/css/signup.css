@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,orange,red);
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Info,#signupForm{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headingSignup{
+    position: absolute;
+    top: 30%;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+#signUpQus{
+    font-size: 30px;
+}
+a{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+#loginBut{
+    position: absolute;
+    top: 60%;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+}
+#loginBut:hover{
+    background-color: orangered;
+    color: white;
+}
+#signupContainer{
+    width: 90%;
+    height: 80%;
+    background-color: rgb(255, 239, 190);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Names{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.name{
+    width: 40%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+    font-size: 18px;
+}
+#cont{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont{
+    width: 87%;
+    height: 24px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+    font-size: 18px;
+}
+h4{
+    width: 90%;   
+}
+#dob,#gender{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+select{
+    width: 120px;
+    height: 40px;
+    background-color: teal;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+}
+label{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#Terms{
+    font-size: 10px;
+    width: 87%;
+}
+#Signup
+   { 
+    top: 60%;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+}

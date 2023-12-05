@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ #logo{
+    height: 20px;
+    width: 100px;
+ }
+header{
+    width:100%;
+    height:90vh;
+    display: flex;
+    position: absolute;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    width:100vw;
+    filter: blur(1px);
+    filter: opacity(70%);
+    
+}
+#navbar{
+    width:100%;
+    height:60px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    color: white;
+    position:absolute;
+}
+img{
+    width:100px;
+    position: absolute;
+    left: 10px
+}
+
+   h4{
+    cursor: pointer;
+    position: relative;
+    left:-70px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+
+
+   }
+   h4:hover{
+    color: red;
+   }
+   #login{
+    position:relative;
+    left:25%;
+   }
+   #a{
+    position: absolute;
+    top: 300px;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+    animation: slide 3s  linear;
+
+   }
+@keyframes slide {
+    from{
+        transform: translate(-450px);
+        filter: opacity(10px);
+    }
+    to{
+        transform: translate(0px);
+        filter: opacity(0px);
+    }
+    
+}
+#search{
+    width:60%;
+    height:30px;
+    position: absolute;
+    bottom: 35%;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.814);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    text-shadow: 5px 5px 5px black;
+    animation: search 3s linear;
+}
+@keyframes search {
+    from{
+        transform: translate(0px,500px);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0px,0px);
+        filter: opacity(1);
+    }
+    
+}
+#searchid{
+    width:90%;
+    height:100%;
+    border: none;
+    background:transparent;
+    outline: none;
+    font-size: 20px;
+}
+#box{
+    cursor: pointer;
+}
+.godown{
+    height: 80px;
+    width:80px;
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    color: white;
+    font-size: 60px;
+    background-color:transparent;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Foldit', cursive;
+    
+}
+.godown:hover{
+    animation: shake 1s infinite;
+    cursor: pointer;
+}
+
+.shoeimg{
+    width: 30%;
+    transform: rotatey(180deg) rotate(-45deg);
+    animation: leftshoe 10s infinite linear;
+    display: flex;
+    position: absolute;
+top:100px;
+}
+@keyframes leftshoe {
+    0%,100%{
+        transform: translate(0px,0px) rotateY(180deg) rotate(-15deg);
+    }
+    35%,75%{
+        transform: translate(50px,50px) rotateY(180deg) rotate(-45deg);
+   
+    }
+}
+.shoeimg:hover{
+    transform: rotatey(180deg) rotate(-45deg) scale(1.1);
+    animation: none;
+ 
+}
+#sdetails{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top:100px;
+}
+.shoen{
+    font-size: 40px;
+    color: orange;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+.spara{
+    font-size: 20px;
+    color: rgb(11, 11, 11);
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+}
+.shoem{
+    font-size: 20px;
+    color: rgb(11, 11, 11);
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+
+}
+.button{
+    font-size: 30px;
+    width:120px;
+    height: 40px;
+    color: white;
+    background-color: orange;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.button:hover{
+    animation: shake 1s infinite;
+
+}
+#innersec {
+    width:100%;
+    height:100vh;
+    background-color:rgba(24, 22, 22, 0.852);
+    position: relative;
+    top: 100vh;
+}
+#rightss {
+    width:100%;
+    height:100vh;
+    background-color:rgba(125, 117, 117, 0.852);
+    position: relative;
+    top: 100vh;
+}
+#rightss3{
+    width:100%;
+    height:100vh;
+    background-color:rgba(125, 117, 117, 0.852);
+    position: relative;
+    top: 100vh;
+}
+img{
+    z-index:3 ;
+}
+#details{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    left: -180px;
+}
+.shoeimg2{
+    width:30%;
+    transform: rotateY(0deg) rotate(-45deg);
+    animation: rightshoe 10s infinite linear;
+    position: relative;
+    left: 55%;
+    transition: all 0.5s;
+    display: flex;
+
+}
+@keyframes rightshoe {
+    0%,100%{
+        transform: translate(0px,0px) rotateY(0deg) rotate(-15deg);
+
+    }
+    35%,75%{
+        transform: translate(50px,50px) rotateY(0deg) rotate(-45deg);
+  
+    }
+    
+}
+.shoeimg2:hover{
+    transform: rotateY(0deg) rotate(-45deg) scale(1.1);
+    animation: none;
+}
+
+footer{
+    width:100%;
+    height:100px;
+    background-color: rgba(128, 128, 128, 0.929);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    bottom: 0px;
+    top: 100vh;
+
+}
+#copyright{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 20px;
+}
+.fa-brands{
+    font-size: 30px;
+    position: relative;
+    left: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-evenly;
+    
+}
+
+#leftss,#leftss3 {
+    width:100%;
+    height:100vh;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top:100vh;
+}
+
+#copyright{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 20px;
+}
+
+#icon1{
+    padding-left: 20px;
+    font-size: 30px;
+    color: blueviolet;
+}
+#icon2{
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(201, 34, 198);
+}
+#icon3{
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(30, 34, 252);
+}

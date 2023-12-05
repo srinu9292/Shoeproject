@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(60deg,rgb(247, 247, 253),rgb(135, 112, 248));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table,tr,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color: white;
+    font-size: 20px;
+}
+table{
+    width: 400px;
+    height: 400px;
+}
+input{
+    width: 95%;
+    height: 95%;
+    background-color:transparent;
+   border: none;
+   color: white;
+   font-size: 18px;
+   outline: none;
+}

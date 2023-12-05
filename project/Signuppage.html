@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="./Signuppage.css">
+    <script src="./Signuppage.js" defer></script>
+</head>
+<body>
+    <div id="container">
+    <form action="./loginform.html">
+  <label for="name">Enter your name </label>
+ 
+  <input type="text" autofocus required placeholder="username"><br><br><br>
+  <label for="password">Enter password</label>
+  <input id="a" type="password" autofocus required placeholder=" your password"><br><br><br>
+  <label for="password">Re_enter your password</label>
+  <input  id="b" type="password" autofocus required placeholder="Re_enter password" oninput="passwordmatch()">
+  <br><br><br>
+  <h4 id="warning">PASSWORD DOES NOT MATCH..!</h4>
+  <button id="signup" onclick="storeData()">SIGNUP</button>
+
+    </form>
+        
+    </div>
+</body>
+</html>

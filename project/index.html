@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./project1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./project.js"></script>
+    <script src="./cart.js"></script>
+   <title>ONLINE SHOE MART</title>
+</head>
+<body>
+    <header>
+        <video src="./assets/video/headerVid.mp4"  muted autoplay loop></video>
+        
+        <div id="navbar">
+<img src="./assets/logos/logo.png" alt="">
+            <a  class="b" href="#latestshoe"><h4>Latestshoe</h4></a>
+            <a class="b" href="#cs"><h4>catagory</h4></a>
+            <a href="./cart.html" ><h4 id="cart">cart</h4></a>
+            <a href="./loginform.html" 7><h4 id="login" onclick="changeName()">Login</h4></a>
+        </div>
+        <h1 id="a">Morningstar Sneakers</h1>
+        <div id="search">
+            <input id="searchid" type="text">
+            <i  id="box"    class="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+        </div>
+        <a href="#latestshoe"><button class="godown">V</button></a>
+    </header>
+
+
+    <section id="latestshoe">
+    <h1 id="nameselection"> Latest shoe selection</h1>
+    <div class="Srotate">
+        <img   class="shoe" src="./assets/images/shoe1.png" alt="">
+        <h1   class="sname"> Jackson 0025 </h1>
+        <p   id="productDiscription" class="smatter">Nike delivers innovative products</p>
+        <h2  id="price" class="smoney">MRP:₹ 10295.00</h2>
+        <button class="buy">BUY</button><span><button class="addToCart">+ Add to cart</button></span>
+    </div>
+    <div class="Srotate">
+        <img class="shoe" src="./assets/images/shoe2.png" alt="">
+        <h1 class="sname">Jackson 0024  </h1>
+        <p class="smatter">Nike delivers innovative products</p>
+        <h2 class="smoney">MRP:₹ 12295.00</h2>
+        <button class="buy">BUY</button><span><button class="addToCart">+ Add to cart</button></span>
+    </div>
+    <div class="Srotate">
+        <img class="shoe" src="./assets/images/shoe3.png" alt="">
+        <h1 class="sname"> Jackson  0023 </h1>
+        <p class="smatter">Nike delivers innovative products</p>
+        <h2 class="smoney">MRP:₹ 11295.00</h2>
+        <button class="buy">BUY</button><span><button class="addToCart">+ Add to cart</button></span>
+       
+    </div>
+    <a href="#cs"><button class="godown" id="buttonv">V</button></a>
+</section>
+
+
+
+<section id="cs">
+    <a class="c" href="./Lifestyle.html"><div class="catcsec" id="Lifestyle">Lifestyle</div></a>
+    <a class="c" href="./jorden.html"><div class="catcsec" id="Jordan">Jordan</div></a>
+    <a class="c" href="./Running.html"><div class="catcsec" id="Running">Running</div></a>
+    <a class="c" href="./basketbal.html"><div class="catcsec" id="Basketball">Basketball</div></a>
+    <a class="c" href="./football.html"><div class="catcsec" id="Football">Football</div></a>
+    <a class="c" href="./trainandgym.html"><div class="catcsec" id="Traininggym">Training & gym</div></a>
+    <a class="c" href="./stakebord.html"><div class="catcsec" id="Skateboarding">Skateboarding</div></a>
+    <a class="c" href="./golf.html"><div class="catcsec" id="Golf">Golf</div></a>
+    <a class="c" href="./tennis.html"><div class="catcsec" id="Tennis">Tennis</div></a>
+    <a class="c" href="./walking.html"><div class="catcsec" id="Walking">Walking</div></a>
+    <a class="c" href="#navbar"><button class="godown" id="up">V</button></a>
+</section>
+<footer>
+    <span id="copyright"> &copy; 2023 ,Morningstar Sneakers Inc.All rights reserved</span>
+    <i id="first" class="fa-brands fa-facebook-f"></i>
+    <i id="first2" class="fa-brands fa-instagram"></i>
+    <i id="first3" class="fa-brands fa-twitter"></i>
+    
+</footer>
+</body>
+</html>

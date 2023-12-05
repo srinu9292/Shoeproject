@@ -1,0 +1,117 @@
+#jordonShoeSec{
+    width: 100%;
+    height: 430vh;
+}
+#leftShoeSec,#rightShoeSec,#leftShoeSec2,#rightShoeSec2{
+    background-color: silver;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ShoeImg{
+    width: 40%;
+    transform: rotateY(180deg) rotate(-45deg);
+    filter: drop-shadow(5px 5px 5px black);
+    animation:moveTheShoeLeft 30s infinite linear;
+    transition: all 0.5s;
+}
+.ShoeImg:hover{
+    transform: rotateY(180deg) rotate(-45deg) scale(1.2);
+    animation: none;
+}
+
+@keyframes moveTheShoeLeft {
+
+    0%,100%{
+        transform: translate(0px,0px) rotateY(180deg) rotate(-15deg);
+    }
+    25%,75%{
+        transform: translate(50px,50px) rotateY(180deg) rotate(-45deg); 
+    }
+}
+@keyframes moveTheShoeRight {
+
+    0%,100%{
+        transform: translate(0px,0px) rotateY(0deg) rotate(-15deg);
+    }
+    25%,75%{
+        transform: translate(50px,50px) rotateY(0deg) rotate(-45deg); 
+    }
+}
+#spec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shoeName{
+    font-size: 5vw;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px black;
+    color:orange;
+}
+.shoePara{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.shoePri{
+    color: lawngreen;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+}
+.Button{
+        width: 300px;
+        height: 30px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 5px black;
+        background-color: orange;
+}
+.Button:hover{
+    animation: giggle 0.2s;
+}
+#rightShoeSec{
+    top: 180vh;
+}
+img{
+    z-index: 3;
+}
+#rightShoe1{
+    transform: rotateY(0deg) rotate(-45deg);
+    animation: moveTheShoeRight 15s infinite linear;
+    position: relative;
+    right: 100px;
+    bottom: 20px;
+    transition: all 0.5s;
+}
+#rightShoe1:hover{
+
+    transform: rotateY(0deg) rotate(-45deg) scale(1.2);
+    animation: none;
+}
+#rightShoeSec,#rightShoeSec2{
+    background-color: black;   
+    height: 80vh; 
+}
+#rightPara{
+    color: white;
+}
+#leftShoeSec2{
+    top: 260vh;
+}
+#rightShoeSec2{
+    top: 340vh;
+}
+footer{
+    top: 420vh;
+}
